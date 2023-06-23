@@ -1,20 +1,14 @@
-package examesclinicos;
+package PetStore;
 
 public class Sangue extends Exame {
-    private String preparacaoPropria;
 
-    public Sangue(String convenio, String nomeDoMedico, String nomeDoPaciente, String preparacaoPropria) {
-        super(convenio, nomeDoMedico, nomeDoPaciente);
-        this.preparacaoPropria = preparacaoPropria;
-    }
+	private static final long serialVersionUID = 1L;
 
-    // Getter e Setter para preparacaoPropria
-
-    public String getPreparacaoPropria() {
-        return preparacaoPropria;
-    }
-
-    public void setPreparacaoPropria(String preparacaoPropria) {
-        this.preparacaoPropria = preparacaoPropria;
-    }
+	public String soar() {
+		return "Fazer jejum 6h, remédios e bebidas proibidos.";
+	}
+	public Sangue(String convenio, int medico, String paciente) {
+		super(convenio, medico, paciente);
+		this.especie = "Preparação Própria";
+	}
 }
